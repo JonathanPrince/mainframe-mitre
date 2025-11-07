@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import { Sun, Moon, Search } from "lucide-react";
 import TechniqueGrid from "./components/TechniqueGrid.jsx";
 
-const DATA_URL = "/data/zos-mitre-data.json";
+const DATA_URL = "/mainframe-mitre/data/zos-mitre-data.json";
 
 function useTheme() {
   const [theme, setTheme] = useState(() => localStorage.getItem("theme") || "dark");
