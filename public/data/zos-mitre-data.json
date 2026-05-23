@@ -418,7 +418,7 @@
     },
     {
       "attack_name": "Native API",
-      "mitre_id": "",
+      "mitre_id": "T1106",
       "tactic": "Execution",
       "zos_summary": "Adversaries may directly interact with the native OS application programming interface (API) to execute behaviors. Native APIs provide a controlled means of calling low-level OS services within the kernel, such as thoseinvolving hardware/devices, memory, and processes. These native APIs are leveraged by the OS during system boot (when other system components are not yet initialized) as well as carrying out tasks and requests duringroutine operations.",
       "services_protocols": [
@@ -459,7 +459,9 @@
       "mitigations": [],
       "impact": "",
       "notable_cves": [],
-      "references": [],
+      "references": [
+        "https://attack.mitre.org/techniques/T1106/"
+      ],
       "notes": "Auto-expanded from uploaded Mainframe-Mitre.json. Please verify MITRE IDs and enrich z/OS specifics."
     },
     {
@@ -527,7 +529,7 @@
     },
     {
       "attack_name": "Malicious File",
-      "mitre_id": "T1204",
+      "mitre_id": "T1204.002",
       "tactic": "Execution",
       "zos_summary": "An adversary may rely upon a user opening a malicious file in order to gain execution. Users may be subjected to social engineering to get them to open a file that will lead to code execution. Adversaries may use severaltypes of files that require a user to execute them (REXX, JCL, Others). They may also bring source code over to compile locally on the mainframe to bypass security tools or file transferring challenges.",
       "services_protocols": [
@@ -569,13 +571,13 @@
       "impact": "",
       "notable_cves": [],
       "references": [
-        "https://attack.mitre.org/techniques/T1204/"
+        "https://attack.mitre.org/techniques/T1204.002/"
       ],
       "notes": "Auto-expanded from uploaded Mainframe-Mitre.json. Please verify MITRE IDs and enrich z/OS specifics."
     },
     {
       "attack_name": "Graphical User Interface",
-      "mitre_id": "",
+      "mitre_id": "T1061",
       "tactic": "Execution",
       "zos_summary": "Adversaries are able to leverage running applications on the mainframe and use their graphical user interface to execute actions on the system. Examples of this are ISPF, zOSMF, or BMC AMI Ops which have the power to runcommands directly on the system.",
       "services_protocols": [
@@ -616,7 +618,9 @@
       "mitigations": [],
       "impact": "",
       "notable_cves": [],
-      "references": [],
+      "references": [
+        "https://attack.mitre.org/techniques/T1061/"
+      ],
       "notes": "Auto-expanded from uploaded Mainframe-Mitre.json. Please verify MITRE IDs and enrich z/OS specifics."
     },
     {
@@ -717,7 +721,7 @@
     },
     {
       "attack_name": "Boot or Logon Initialization Scripts",
-      "mitre_id": "T1547.001",
+      "mitre_id": "T1037",
       "tactic": "Persistence",
       "zos_summary": "Adversaries may use scripts automatically executed at IPL to establish persistence. Initialization scripts can be used to perform administrative functions, which may often execute other programs or send information to aninternal logging server.",
       "services_protocols": [
@@ -759,7 +763,7 @@
       "impact": "",
       "notable_cves": [],
       "references": [
-        "https://attack.mitre.org/techniques/T1547.001/"
+        "https://attack.mitre.org/techniques/T1037/"
       ],
       "notes": "Auto-expanded from uploaded Mainframe-Mitre.json. Please verify MITRE IDs and enrich z/OS specifics."
     },
@@ -986,7 +990,7 @@
     },
     {
       "attack_name": "Implant Container Image",
-      "mitre_id": "T1500",
+      "mitre_id": "T1525",
       "tactic": "Persistence",
       "zos_summary": "Adversaries may implant cloud container images with malicious code to establish persistence. Amazon Web Service (AWS) Amazon Machine Images (AMI), Google Cloud Platform (GCP) Images, and Azure Images as well as popularcontainer runtimes such as Docker can be implanted or backdoored. Depending on how the infrastructure is provisioned, this could provide persistent access if the infrastructure provisioning tool is instructed to always usethe latest image. With containers now available on z/OS this adds a new attack vector.",
       "services_protocols": [
@@ -1028,13 +1032,13 @@
       "impact": "",
       "notable_cves": [],
       "references": [
-        "https://attack.mitre.org/techniques/T1500/"
+        "https://attack.mitre.org/techniques/T1525/"
       ],
       "notes": "Auto-expanded from uploaded Mainframe-Mitre.json. Please verify MITRE IDs and enrich z/OS specifics."
     },
     {
       "attack_name": "Pre-OS Boot",
-      "mitre_id": "",
+      "mitre_id": "T1542",
       "tactic": "Persistence",
       "zos_summary": "Adversaries may abuse Pre-OS Boot mechanisms as a way to establish persistence on a system. During the booting process of a computer, firmware and various startup services are loaded before the operating system. Theseprograms control flow of execution before the operating system takes control.",
       "services_protocols": [
@@ -1075,7 +1079,9 @@
       "mitigations": [],
       "impact": "",
       "notable_cves": [],
-      "references": [],
+      "references": [
+        "https://attack.mitre.org/techniques/T1542/"
+      ],
       "notes": "Auto-expanded from uploaded Mainframe-Mitre.json. Please verify MITRE IDs and enrich z/OS specifics."
     },
     {
@@ -1143,7 +1149,7 @@
     },
     {
       "attack_name": "Server Software Component",
-      "mitre_id": "",
+      "mitre_id": "T1505",
       "tactic": "Persistence",
       "zos_summary": "Adversaries may abuse legitimate extensible development features of servers to establish persistent access to systems. Enterprise server applications may include features that allow developers to write and install softwareor scripts to extend the functionality of the main application. Adversaries may install malicious components to extend and abuse server applications. Common server software types are ConnectDirect, SSH , FTP , and webbrowsers.",
       "services_protocols": [
@@ -1184,7 +1190,9 @@
       "mitigations": [],
       "impact": "",
       "notable_cves": [],
-      "references": [],
+      "references": [
+        "https://attack.mitre.org/techniques/T1505/"
+      ],
       "notes": "Auto-expanded from uploaded Mainframe-Mitre.json. Please verify MITRE IDs and enrich z/OS specifics."
     },
     {
@@ -1359,7 +1367,7 @@
     },
     {
       "attack_name": "Boot or Logon Initialization Scripts",
-      "mitre_id": "T1547.001",
+      "mitre_id": "T1037",
       "tactic": "Privilege Escalation",
       "zos_summary": "Adversaries may use scripts automatically executed at IPL or logon initialization to establish persistence. Initialization scripts can be used to perform administrative functions, which may often execute other programs orsend information to an internal logging server. These scripts can vary based on operating system and whether applied locally or remotely.",
       "services_protocols": [
@@ -1401,13 +1409,13 @@
       "impact": "",
       "notable_cves": [],
       "references": [
-        "https://attack.mitre.org/techniques/T1547.001/"
+        "https://attack.mitre.org/techniques/T1037/"
       ],
       "notes": "Auto-expanded from uploaded Mainframe-Mitre.json. Please verify MITRE IDs and enrich z/OS specifics."
     },
     {
       "attack_name": "Create or Modify System Processes",
-      "mitre_id": "",
+      "mitre_id": "T1543",
       "tactic": "Privilege Escalation",
       "zos_summary": "Adversaries may create or modify system-level processes to repeatedly execute malicious payloads as part of persistence. When operating systems boot up, they can start processes that perform background system functions. OnUSS, these system processes are referred to as services.",
       "services_protocols": [
@@ -1448,7 +1456,9 @@
       "mitigations": [],
       "impact": "",
       "notable_cves": [],
-      "references": [],
+      "references": [
+        "https://attack.mitre.org/techniques/T1543/"
+      ],
       "notes": "Auto-expanded from uploaded Mainframe-Mitre.json. Please verify MITRE IDs and enrich z/OS specifics."
     },
     {
@@ -1509,8 +1519,8 @@
       "notes": "Auto-expanded from uploaded Mainframe-Mitre.json. Please verify MITRE IDs and enrich z/OS specifics."
     },
     {
-      "attack_name": "Exploitation for Privilege Escaltion",
-      "mitre_id": "",
+      "attack_name": "Exploitation for Privilege Escalation",
+      "mitre_id": "T1068",
       "tactic": "Privilege Escalation",
       "zos_summary": "Adversaries may exploit software vulnerabilities in an attempt to collect elevate privileges. Exploitation of a software vulnerability occurs when an adversary takes advantage of a programming error in a program, service,or within the operating system software or kernel itself to execute adversary-controlled code. Security constructs such as permission levels will often hinder access to information and use of certain techniques, soadversaries will likely need to perform privilege escalation to include use of software exploitation to circumvent those restrictions.",
       "services_protocols": [
@@ -1551,12 +1561,14 @@
       "mitigations": [],
       "impact": "",
       "notable_cves": [],
-      "references": [],
+      "references": [
+        "https://attack.mitre.org/techniques/T1068/"
+      ],
       "notes": "Auto-expanded from uploaded Mainframe-Mitre.json. Please verify MITRE IDs and enrich z/OS specifics."
     },
     {
-      "attack_name": "Group Policy Modification",
-      "mitre_id": "",
+      "attack_name": "Domain Policy Modification",
+      "mitre_id": "T1484",
       "tactic": "Privilege Escalation",
       "zos_summary": "Adversaries may modify group permissions in External Security Managers to subvert the intended discretionary access controls for a domain, usually with the intention of escalating privileges on the domain.",
       "services_protocols": [
@@ -1597,7 +1609,9 @@
       "mitigations": [],
       "impact": "",
       "notable_cves": [],
-      "references": [],
+      "references": [
+        "https://attack.mitre.org/techniques/T1484/"
+      ],
       "notes": "Auto-expanded from uploaded Mainframe-Mitre.json. Please verify MITRE IDs and enrich z/OS specifics."
     },
     {
@@ -1842,7 +1856,7 @@
     },
     {
       "attack_name": "Privilege Manipulation",
-      "mitre_id": "",
+      "mitre_id": "T1134",
       "tactic": "Privilege Escalation",
       "zos_summary": "The Accessor Environment Element (ACEE) stores user privileges in memory. Adversaries who are able to identify a way to access to supervisor state, key 0 can write to memory and manipulate the privileges stored in the ACEEto give themselves any escalated privileges they desire. Often times adversaries are able to do this through access to an APF authorized library, APF permissions (BPX.FILEATTR.APF), or system monitoring tool.",
       "services_protocols": [
@@ -1883,7 +1897,9 @@
       "mitigations": [],
       "impact": "",
       "notable_cves": [],
-      "references": [],
+      "references": [
+        "https://attack.mitre.org/techniques/T1134/"
+      ],
       "notes": "Auto-expanded from uploaded Mainframe-Mitre.json. Please verify MITRE IDs and enrich z/OS specifics."
     },
     {
@@ -1999,7 +2015,7 @@
     },
     {
       "attack_name": "Execution Guardrails",
-      "mitre_id": "T1204.002",
+      "mitre_id": "T1480",
       "tactic": "Defense Evasion",
       "zos_summary": "Adversaries may use execution guardrails to constrain execution or actions based on adversary supplied and environment specific conditions that are expected to be present on the target. Guardrails ensure that a payloadonly executes against an intended target and reduces collateral damage from an adversary’s campaign. Values an adversary can provide about a target system or environment to use as guardrails may include specific networkshare names, name on licensed software, and local/external IP addresses.",
       "services_protocols": [
@@ -2041,13 +2057,13 @@
       "impact": "",
       "notable_cves": [],
       "references": [
-        "https://attack.mitre.org/techniques/T1204.002/"
+        "https://attack.mitre.org/techniques/T1480/"
       ],
       "notes": "Auto-expanded from uploaded Mainframe-Mitre.json. Please verify MITRE IDs and enrich z/OS specifics."
     },
     {
       "attack_name": "Exploitation for Defense Evasion",
-      "mitre_id": "",
+      "mitre_id": "T1211",
       "tactic": "Defense Evasion",
       "zos_summary": "Adversaries may exploit a system or application vulnerability to bypass security features. Exploitation of a software vulnerability occurs when an adversary takes advantage of a programming error in a program, service, orwithin the operating system software or kernel itself to execute adversary-controlled code. Vulnerabilities may exist in defensive security software that can be used to disable or circumvent them.",
       "services_protocols": [
@@ -2088,7 +2104,9 @@
       "mitigations": [],
       "impact": "",
       "notable_cves": [],
-      "references": [],
+      "references": [
+        "https://attack.mitre.org/techniques/T1211/"
+      ],
       "notes": "Auto-expanded from uploaded Mainframe-Mitre.json. Please verify MITRE IDs and enrich z/OS specifics."
     },
     {
@@ -2151,8 +2169,8 @@
       "notes": "Auto-expanded from uploaded Mainframe-Mitre.json. Please verify MITRE IDs and enrich z/OS specifics."
     },
     {
-      "attack_name": "Group Policy Modification",
-      "mitre_id": "",
+      "attack_name": "Domain Policy Modification",
+      "mitre_id": "T1484",
       "tactic": "Defense Evasion",
       "zos_summary": "Adversaries may modify group permissions in External Security Managers to subvert the intended discretionary access controls for a domain, usually with the intention of escalating privileges on the domain.",
       "services_protocols": [
@@ -2193,7 +2211,9 @@
       "mitigations": [],
       "impact": "",
       "notable_cves": [],
-      "references": [],
+      "references": [
+        "https://attack.mitre.org/techniques/T1484/"
+      ],
       "notes": "Auto-expanded from uploaded Mainframe-Mitre.json. Please verify MITRE IDs and enrich z/OS specifics."
     },
     {
@@ -2376,7 +2396,7 @@
       "notes": "Auto-expanded from uploaded Mainframe-Mitre.json. Please verify MITRE IDs and enrich z/OS specifics."
     },
     {
-      "attack_name": "Indicator Removal on Host",
+      "attack_name": "Indicator Removal",
       "mitre_id": "T1070",
       "tactic": "Defense Evasion",
       "zos_summary": "Adversaries may delete or alter generated artifacts on a host system, including logs or captured files such as quarantined malware. Locations and format of logs are platform or product-specific, however SMF is the standardon the mainframe",
@@ -2437,7 +2457,7 @@
     },
     {
       "attack_name": "Indirect Command Execution",
-      "mitre_id": "",
+      "mitre_id": "T1202",
       "tactic": "Defense Evasion",
       "zos_summary": "Adversaries may abuse utilities that allow for command execution to bypass security restrictions that limit the use of command-line interpreters.",
       "services_protocols": [
@@ -2478,7 +2498,9 @@
       "mitigations": [],
       "impact": "",
       "notable_cves": [],
-      "references": [],
+      "references": [
+        "https://attack.mitre.org/techniques/T1202/"
+      ],
       "notes": "Auto-expanded from uploaded Mainframe-Mitre.json. Please verify MITRE IDs and enrich z/OS specifics."
     },
     {
@@ -2540,7 +2562,7 @@
     },
     {
       "attack_name": "Modify Authentication Process",
-      "mitre_id": "T1621",
+      "mitre_id": "T1556",
       "tactic": "Defense Evasion",
       "zos_summary": "Adversaries may modify authentication mechanisms and processes to access user credentials or enable otherwise unwarranted access to accounts.",
       "services_protocols": [
@@ -2590,7 +2612,7 @@
       "impact": "",
       "notable_cves": [],
       "references": [
-        "https://attack.mitre.org/techniques/T1621/"
+        "https://attack.mitre.org/techniques/T1556/"
       ],
       "notes": "Auto-expanded from uploaded Mainframe-Mitre.json. Please verify MITRE IDs and enrich z/OS specifics."
     },
@@ -2653,7 +2675,7 @@
     },
     {
       "attack_name": "Pre-OS Boot",
-      "mitre_id": "",
+      "mitre_id": "T1542",
       "tactic": "Defense Evasion",
       "zos_summary": "Adversaries may abuse Pre-OS Boot mechanisms as a way to establish persistence on a system. During the booting process of a computer, firmware and various startup services are loaded before the operating system. Theseprograms control flow of execution before the operating system takes control.",
       "services_protocols": [
@@ -2694,7 +2716,9 @@
       "mitigations": [],
       "impact": "",
       "notable_cves": [],
-      "references": [],
+      "references": [
+        "https://attack.mitre.org/techniques/T1542/"
+      ],
       "notes": "Auto-expanded from uploaded Mainframe-Mitre.json. Please verify MITRE IDs and enrich z/OS specifics."
     },
     {
@@ -2980,7 +3004,7 @@
     },
     {
       "attack_name": "Exploitation for Credential Access",
-      "mitre_id": "T1211",
+      "mitre_id": "T1212",
       "tactic": "Credential Access",
       "zos_summary": "Adversaries may exploit software vulnerabilities in an attempt to collect credentials. Exploitation of a software vulnerability occurs when an adversary takes advantage of a programming error in a program, service, orwithin the operating system software or kernel itself to execute adversary-controlled code. Credentialing and authentication mechanisms may be targeted for exploitation by adversaries as a means to gain access to usefulcredentials or circumvent the process to gain access to systems. Exploitation for credential access may also result in Privilege Escalation depending on the process targeted or credentials obtained.",
       "services_protocols": [
@@ -3022,7 +3046,7 @@
       "impact": "",
       "notable_cves": [],
       "references": [
-        "https://attack.mitre.org/techniques/T1211/"
+        "https://attack.mitre.org/techniques/T1212/"
       ],
       "notes": "Auto-expanded from uploaded Mainframe-Mitre.json. Please verify MITRE IDs and enrich z/OS specifics."
     },
@@ -3083,7 +3107,7 @@
       "notes": "Auto-expanded from uploaded Mainframe-Mitre.json. Please verify MITRE IDs and enrich z/OS specifics."
     },
     {
-      "attack_name": "Man-in-the-middle",
+      "attack_name": "Adversary-in-the-Middle",
       "mitre_id": "T1557",
       "tactic": "Credential Access",
       "zos_summary": "Adversaries may attempt to position themselves between two or more networked devices using a man-in-the-middle (MiTM) technique to support follow-on behaviors such as Network Sniffing or Transmitted Data Manipulation. Thiscan be effective against unencrypted 3270 traffic",
@@ -3140,7 +3164,7 @@
     },
     {
       "attack_name": "Modify Authentication Process",
-      "mitre_id": "T1621",
+      "mitre_id": "T1556",
       "tactic": "Credential Access",
       "zos_summary": "Adversaries may modify authentication mechanisms and processes to access user credentials or enable otherwise unwarranted access to accounts. The authentication process is handled by mechanisms, such as RACF, ACF2, or TSSwhich are responsible for gathering, storing, and validating credentials.",
       "services_protocols": [
@@ -3190,7 +3214,7 @@
       "impact": "",
       "notable_cves": [],
       "references": [
-        "https://attack.mitre.org/techniques/T1621/"
+        "https://attack.mitre.org/techniques/T1556/"
       ],
       "notes": "Auto-expanded from uploaded Mainframe-Mitre.json. Please verify MITRE IDs and enrich z/OS specifics."
     },
@@ -3251,7 +3275,7 @@
       "notes": "Auto-expanded from uploaded Mainframe-Mitre.json. Please verify MITRE IDs and enrich z/OS specifics."
     },
     {
-      "attack_name": "Two-Factor Authentication Interception",
+      "attack_name": "Multi-Factor Authentication Interception",
       "mitre_id": "T1111",
       "tactic": "Credential Access",
       "zos_summary": "Adversaries may target two-factor authentication mechanisms, such as smart cards, to gain access to credentials that can be used to access systems, services, and network resources. Use of two or multi-factor authentication(2FA or MFA) is recommended and provides a higher level of security than user names and passwords alone, but organizations should be aware of techniques that could be used to intercept and bypass these security mechanisms.",
@@ -3475,7 +3499,7 @@
       "notes": "Auto-expanded from uploaded Mainframe-Mitre.json. Please verify MITRE IDs and enrich z/OS specifics."
     },
     {
-      "attack_name": "Network Service Scanning",
+      "attack_name": "Network Service Discovery",
       "mitre_id": "T1046",
       "tactic": "Discovery",
       "zos_summary": "Adversaries may attempt to get a listing of services running on remote hosts, including those that may be vulnerable to remote software exploitation. Methods to acquire this information include port scans and vulnerabilityscans using tools that are brought onto a system.",
@@ -3645,7 +3669,7 @@
     },
     {
       "attack_name": "Password Policy Discovery",
-      "mitre_id": "",
+      "mitre_id": "T1201",
       "tactic": "Discovery",
       "zos_summary": "Adversaries may attempt to access detailed information about the password policy used within an enterprise network. Password policies for networks are a way to enforce complex passwords that are difficult to guess or crackthrough Brute Force. This would help the adversary to create a list of common passwords and launch dictionary and/or brute force attacks which adheres to the policy (e.g. if the minimum password length should be 8, thennot trying passwords such as 'pass123'; not checking for more than 3-4 passwords per account if the lockout is set to 6 as to not lock out accounts).",
       "services_protocols": [
@@ -3686,7 +3710,9 @@
       "mitigations": [],
       "impact": "",
       "notable_cves": [],
-      "references": [],
+      "references": [
+        "https://attack.mitre.org/techniques/T1201/"
+      ],
       "notes": "Auto-expanded from uploaded Mainframe-Mitre.json. Please verify MITRE IDs and enrich z/OS specifics."
     },
     {
@@ -4480,7 +4506,7 @@
     },
     {
       "attack_name": "Software Deployment Tools",
-      "mitre_id": "T1518.001",
+      "mitre_id": "T1072",
       "tactic": "Lateral Movement",
       "zos_summary": "Adversaries may gain access to and use third-party software suites installed within an enterprise network, such as administration, monitoring, and deployment systems, to move laterally through the network. Third-partyapplications and software deployment systems may be in use in the network environment for administration purposes (MainView, Omegamon).",
       "services_protocols": [
@@ -4522,7 +4548,7 @@
       "impact": "",
       "notable_cves": [],
       "references": [
-        "https://attack.mitre.org/techniques/T1518.001/"
+        "https://attack.mitre.org/techniques/T1072/"
       ],
       "notes": "Auto-expanded from uploaded Mainframe-Mitre.json. Please verify MITRE IDs and enrich z/OS specifics."
     },
@@ -4632,7 +4658,7 @@
     },
     {
       "attack_name": "Archive Collected Data",
-      "mitre_id": "T1560.001",
+      "mitre_id": "T1560",
       "tactic": "Collection",
       "zos_summary": "An adversary may compress and/or encrypt data that is collected prior to exfiltration. Compressing the data can help to obfuscate the collected data and minimize the amount of data sent over the network. Encryption can beused to hide information that is being exfiltrated from detection or make exfiltration less conspicuous upon inspection by a defender.",
       "services_protocols": [
@@ -4682,7 +4708,7 @@
       "impact": "",
       "notable_cves": [],
       "references": [
-        "https://attack.mitre.org/techniques/T1560.001/"
+        "https://attack.mitre.org/techniques/T1560/"
       ],
       "notes": "Auto-expanded from uploaded Mainframe-Mitre.json. Please verify MITRE IDs and enrich z/OS specifics."
     },
@@ -5074,7 +5100,7 @@
     },
     {
       "attack_name": "Data Encoding",
-      "mitre_id": "",
+      "mitre_id": "T1132",
       "tactic": "Command and Control",
       "zos_summary": "Adversaries may encode data to make the content of command and control traffic more difficult to detect. Command and control (C2) information can be encoded using a standard data encoding system. Use of data encoding mayadhere to existing protocol specifications and includes use of ASCII, Unicode, Base64, MIME, or other binary-to-text and character encoding systems. Some data encoding systems may also result in data compression, such asgzip.",
       "services_protocols": [
@@ -5115,7 +5141,9 @@
       "mitigations": [],
       "impact": "",
       "notable_cves": [],
-      "references": [],
+      "references": [
+        "https://attack.mitre.org/techniques/T1132/"
+      ],
       "notes": "Auto-expanded from uploaded Mainframe-Mitre.json. Please verify MITRE IDs and enrich z/OS specifics."
     },
     {
@@ -5176,7 +5204,7 @@
     },
     {
       "attack_name": "Dynamic Resolution",
-      "mitre_id": "T1608",
+      "mitre_id": "T1568",
       "tactic": "Command and Control",
       "zos_summary": "Adversaries may dynamically establish connections to command and control infrastructure to evade common detections and remediations. This may be achieved by using malware that shares a common algorithm with theinfrastructure the adversary uses to receive the malware's communications. These calculations can be used to dynamically adjust parameters such as the domain name, IP address, or port number the malware uses for commandand control.",
       "services_protocols": [
@@ -5226,7 +5254,7 @@
       "impact": "",
       "notable_cves": [],
       "references": [
-        "https://attack.mitre.org/techniques/T1608/"
+        "https://attack.mitre.org/techniques/T1568/"
       ],
       "notes": "Auto-expanded from uploaded Mainframe-Mitre.json. Please verify MITRE IDs and enrich z/OS specifics."
     },
@@ -5397,7 +5425,7 @@
     },
     {
       "attack_name": "Multi-Stage Channels",
-      "mitre_id": "",
+      "mitre_id": "T1104",
       "tactic": "Command and Control",
       "zos_summary": "Adversaries may create multiple stages for command and control that are employed under different conditions or for certain functions. Use of multiple stages may obfuscate the command and control channel to make detectionmore difficult.",
       "services_protocols": [
@@ -5438,7 +5466,9 @@
       "mitigations": [],
       "impact": "",
       "notable_cves": [],
-      "references": [],
+      "references": [
+        "https://attack.mitre.org/techniques/T1104/"
+      ],
       "notes": "Auto-expanded from uploaded Mainframe-Mitre.json. Please verify MITRE IDs and enrich z/OS specifics."
     },
     {
@@ -5663,7 +5693,7 @@
     },
     {
       "attack_name": "Traffic Signaling",
-      "mitre_id": "",
+      "mitre_id": "T1205",
       "tactic": "Command and Control",
       "zos_summary": "Adversaries may use traffic signaling to hide open ports or other malicious functionality used for persistence or command and control. Traffic signaling involves the use of a magic value or sequence that must be sent to asystem to trigger a special response, such as opening a closed port or executing a malicious task. This may take the form of sending a series of packets with certain characteristics before a port will be opened that theadversary can use for command and control. Usually this series of packets consists of attempted connections to a predefined sequence of closed ports (i.e. Port Knocking), but can involve unusual flags, specific strings, orother unique characteristics. After the sequence is completed, opening a port may be accomplished by the host-based firewall, but could also be implemented by custom software.",
       "services_protocols": [
@@ -5704,7 +5734,9 @@
       "mitigations": [],
       "impact": "",
       "notable_cves": [],
-      "references": [],
+      "references": [
+        "https://attack.mitre.org/techniques/T1205/"
+      ],
       "notes": "Auto-expanded from uploaded Mainframe-Mitre.json. Please verify MITRE IDs and enrich z/OS specifics."
     },
     {
@@ -5813,7 +5845,7 @@
     },
     {
       "attack_name": "Data Transfer Size Limits",
-      "mitre_id": "",
+      "mitre_id": "T1030",
       "tactic": "Exfiltration",
       "zos_summary": "An adversary may exfiltrate data in fixed size chunks instead of whole files or limit packet sizes below certain thresholds. This approach may be used to avoid triggering network data transfer threshold alerts.",
       "services_protocols": [
@@ -5854,7 +5886,9 @@
       "mitigations": [],
       "impact": "",
       "notable_cves": [],
-      "references": [],
+      "references": [
+        "https://attack.mitre.org/techniques/T1030/"
+      ],
       "notes": "Auto-expanded from uploaded Mainframe-Mitre.json. Please verify MITRE IDs and enrich z/OS specifics."
     },
     {
@@ -6194,7 +6228,7 @@
     },
     {
       "attack_name": "Disk Wipe",
-      "mitre_id": "T1485.001",
+      "mitre_id": "T1561",
       "tactic": "Impact",
       "zos_summary": "Adversaries may wipe or corrupt raw disk data on specific systems or in large numbers in a network to interrupt availability to system and network resources. With direct write access to a disk, adversaries may attempt tooverwrite portions of disk data. A complete wipe of all disk sectors may be attempted.",
       "services_protocols": [
@@ -6243,7 +6277,7 @@
       "impact": "",
       "notable_cves": [],
       "references": [
-        "https://attack.mitre.org/techniques/T1485.001/"
+        "https://attack.mitre.org/techniques/T1561/"
       ],
       "notes": "Auto-expanded from uploaded Mainframe-Mitre.json. Please verify MITRE IDs and enrich z/OS specifics."
     },
@@ -6305,7 +6339,7 @@
     },
     {
       "attack_name": "Firmware Corruption",
-      "mitre_id": "",
+      "mitre_id": "T1495",
       "tactic": "Impact",
       "zos_summary": "Adversaries may overwite or corrupt the z/OS firmware through HMC and could erase machine instructions or license code",
       "services_protocols": [
@@ -6346,12 +6380,14 @@
       "mitigations": [],
       "impact": "",
       "notable_cves": [],
-      "references": [],
+      "references": [
+        "https://attack.mitre.org/techniques/T1495/"
+      ],
       "notes": "Auto-expanded from uploaded Mainframe-Mitre.json. Please verify MITRE IDs and enrich z/OS specifics."
     },
     {
       "attack_name": "Inhibit System Recovery",
-      "mitre_id": "",
+      "mitre_id": "T1490",
       "tactic": "Impact",
       "zos_summary": "Adversaries may delete or remove built-in operating system data and turn off services designed to aid in the recovery of a corrupted system to prevent recovery. This could be in combination with Data Destruction and DataEncryption to augment their effects",
       "services_protocols": [
@@ -6392,7 +6428,9 @@
       "mitigations": [],
       "impact": "",
       "notable_cves": [],
-      "references": [],
+      "references": [
+        "https://attack.mitre.org/techniques/T1490/"
+      ],
       "notes": "Auto-expanded from uploaded Mainframe-Mitre.json. Please verify MITRE IDs and enrich z/OS specifics."
     },
     {
